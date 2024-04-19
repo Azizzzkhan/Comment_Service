@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: comment-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_jdbc
+    username: root
+    password: azizkhan
+server:
+  port: 8083
+jwt:
+  secret: ENk2InMhEpe50LtIdvnjbjE0Ia0virEr9wCJJ6UAms
+
+
