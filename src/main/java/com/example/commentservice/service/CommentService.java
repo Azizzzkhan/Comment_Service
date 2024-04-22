@@ -1,19 +1,19 @@
 package com.example.commentservice.service;
 
-import com.example.commentservice.dto.CommentDto;
+import com.example.commentservice.dto.CommentRequestDto;
+import com.example.commentservice.dto.CommentResponseDto;
 
 import java.util.List;
 
 public interface CommentService {
-    List<CommentDto> getAll();
+    List<CommentResponseDto> getAll();
 
-    List<CommentDto> getByTaskId(Long taskId);
+    List<CommentResponseDto> getByTaskId(Long taskId);
 
-    CommentDto save(CommentDto commentDto);
+    CommentResponseDto save(CommentRequestDto request);
 
     void delete(Long id);
 
-    CommentDto update(Long id, CommentDto commentDto);
-
+    CommentResponseDto update(Long id, CommentRequestDto request);
 
 }

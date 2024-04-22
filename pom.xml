@@ -16,8 +16,27 @@
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2023.0.1</spring-cloud.version>
+        <jcabi-xml.version>0.29.0</jcabi-xml.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.projectreactor.kafka</groupId>
+            <artifactId>reactor-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.jcabi</groupId>
+            <artifactId>jcabi-xml</artifactId>
+            <version>${jcabi-xml.version}</version>
+
+        </dependency>
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
