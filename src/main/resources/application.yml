@@ -1,7 +1,14 @@
 spring:
   application:
     name: comment-service
-
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic: comment-create
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    liquibase:
+      change-log: classpath:db/changelog-master.yaml
   datasource:
     url: jdbc:mysql://localhost:3306/test_jdbc
     username: root

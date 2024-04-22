@@ -25,7 +25,7 @@ public class TokenDecoder {
                 .getBody();
 
         return User.builder()
-                .id(Long.valueOf(claims.get("id").toString()))
+                .id(Long.valueOf(claims.getSubject()))
                 .email(claims.get("email").toString())
                 .name(claims.get("name").toString())
                 .secondName(claims.get("secondName").toString())
